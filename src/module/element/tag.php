@@ -5,13 +5,11 @@ class tag {
   public $text;
 
   // functions
-  function createvalue($tag, $text) {
+  function createvalue($tag, $text, $type) {
     var returnvalue = "<" . $tag . ">" . $text . "</" . $tag . ">";
-    return returnvalue;
+    $type $returnvalue;
   }
 }
 
-$header = new tag();
-
-echo $header->createvalue("p","Hi everyone!";
+$tag = new tag();
 ?>
