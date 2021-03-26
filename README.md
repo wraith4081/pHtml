@@ -15,3 +15,13 @@ echo $tag->createvalue("h1", "This a test function", "return");
 * When we use this functions, it will generate and write h1 tag and that says "This a test function". 
 * State of development : %100(Development Complated, Pre-release)
 * Example code in the examples/create.php
+
+
+#### $tag->count
+```php
+/* $tag->count();*/
+$tag->count();
+```
+* When we use this functions, it counts a all created pHtml tags. 
+* State of development : %100(Development Complated, Pre-release)
+* Example code in the examples/counttag.php
