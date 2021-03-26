@@ -20,7 +20,7 @@ echo $tag->createvalue("h1", "This a test function", "return");
 #### $tag->count
 ```php
 /* $tag->count();*/
-$tag->count();
+echo $tag->count();
 ```
 * When we use this functions, it counts a all created pHtml tags. 
 * State of development : %100(Development Complated, Pre-release)
