@@ -25,3 +25,14 @@ echo $tag->count();
 * When we use this functions, it counts a all created pHtml tags. 
 * State of development : %100(Development Complated, Pre-release)
 * Example code in the examples/counttag.php
+
+#### $security->removexss
+```php
+<?php 
+  include "module/element/security.php";
+// security_level now support only "1"
+  echo $security->removexss($AnythingToCleanedMessageInXss, "1");
+?>```
+* When we use this functions, this function help to remove basic html xss on php. 
+* State of development : %100(Development Complated, Pre-release)
+* Example code in the examples/removexss.php
