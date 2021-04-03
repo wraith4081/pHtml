@@ -26,6 +26,8 @@ echo $tag->count();
 * State of development : %100(Development Complated, Pre-release)
 * Example code in the examples/counttag.php
 
+### Security
+
 #### $security->removexss
 ```php
 include "module/element/security.php";
