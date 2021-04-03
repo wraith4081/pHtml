@@ -39,3 +39,15 @@ echo $security->removexss($AnythingToCleanedMessageInXss, "1");
 * State of development : %100(Development Complated, Pre-release)
 * Example code in the examples/removexss.php
 
+
+#### $security->ddosprotection
+```php
+include "module/element/security.php";
+  // status if become to 1 ddos protection to enabled on used page
+  // Basic using $security->ddosprotection(status)
+  // this function help to block to basic level ddos
+echo $security->ddosprotection("1");
+```
+* When we use this functions, this function help to block to basic level ddos.
+* State of development : %100(Development Complated, Pre-release)
+* Example code in the examples/ddosprotection.php
