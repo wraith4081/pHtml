@@ -28,12 +28,11 @@ echo $tag->count();
 
 #### $security->removexss
 ```php
-<?php 
   include "module/element/security.php";
 /* security_level now support only "1" */
 /* $security->removexss(input, security_level) */
   echo $security->removexss($AnythingToCleanedMessageInXss, "1");
-?>```
+```
 * When we use this functions, this function help to remove basic html xss on php. 
 * State of development : %100(Development Complated, Pre-release)
 * Example code in the examples/removexss.php
