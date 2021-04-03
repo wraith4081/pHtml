@@ -11,8 +11,30 @@ class security {
       return $returnvalue;
     }
   }
-   
+   function ddosprotection($status) {
+      if($status == 1) {
+          // Assuming session is already started
+          $uri = md5($_SERVER['REQUEST_URI']);
+          $exp = 3; // 3 seconds
+          $hash = $uri .'|'. time();
+          if (!isset($_SESSION['ddos'])) {
+            $_SESSION['ddos'] = $hash;
+            }
+
+          list($_uri, $_exp) = explode('|', $_SESSION['ddos']);
+          if ($_uri == $uri && time() - $_exp < $exp) {
+           header('HTTP/1.1 503 Service Unavailable');
+           // die('Easy!');
+            die;
+          }
+
+          // Save last request
+          $_SESSION['ddos'] = $hash;
+
+      }
+   }
 }
+
 $security = new security();
 
 // !!!WARNING THIS FUNCTIONS NOT TESTED!!!
