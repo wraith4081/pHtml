@@ -51,3 +51,18 @@ echo $security->ddosprotection("1");
 * When we use this functions, this function help to block to basic level ddos.
 * State of development : %100(Development Complated, Pre-release)
 * Example code in the examples/ddosprotection.php
+### Server
+
+#### $server->maxmemory
+```php
+include "module/element/server.php";
+  /* limit only support <size>M or <size>G */
+  /* $server->maxmemory(limit) */
+  $server->maxmemory("1024M");
+// This Make same thing
+  $server->maxmemory("1G");
+
+```
+* When we use this functions, this function help to limit to memory usage.
+* State of development : %100(Development Complated, Pre-release)
+* Example code in the examples/memorylimit.php
