@@ -66,5 +66,3 @@ include "module/element/server.php";
 * When we use this functions, this function help to limit to memory usage.
 * State of development : %100(Development Complated, Pre-release)
 * Example code in the examples/memorylimit.php
-
-<hr>
